@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="reset.css">   <!--Resetear todos los stylos del HMTML-->
+    <link rel="stylesheet" href="styles.css">   <!-- Mandar llamar al los estilos en css-->
+
+    <script type="text/javascript" src="script.js"></script>  <!-- Mandar llamar al script-->
+    
+    <title>Encriptador-Desencriptador</title>
+</head>
+
+<body>
+    <!-- Banner Inicial -->
+    <header>
+        <img src="Imagenes/LogoAlura.svg" alt="LogoAlura">
+    </header>
+
+    <!--Contenido de la pagina -->
+    <main>
+
+        <section class="seccion1">
+            <textarea class="textarea" id="TextoIngresado" placeholder="¡Escriba el texto a Encriptar Aqui!"></textarea>
+
+            <div class = "contenedorBotones">
+                <input type="button" id="bEncriptar" value="Encriptar" class="botonEncriptar">
+                <input type="button" id="bDesencriptar" value="Desencriptar" class="botonDesencriptar">
+                 <!--<input type="button" id="bCopiar" value="Copiar" class="botonCopiar">-->
+                <button type="button" class="botonCopiar" id="bCopiar">       Copiar</button>
+            </div>
+
+        </section>
+
+        <section class="seccion2">
+
+            <div class="contenedorImagen">
+                <img src="Imagenes/Muneco.svg" alt="Muneco">
+            </div>
+
+            <div class="contenedorSinDatos" id="textoDesencriptado">
+                <p>Agrege un mensaje primero</p>
+            </div>
+
+            <div class="contenedorInicial" id="contenedorInicial"> 
+                <p>Escriba el texto que desea encriptar o desencriptar para iniciar</p>
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <!-- Pie de pagina -->
+    <footer>
+        
+    </footer>
+</body>
+
+    <script>
+
+        var btnEncriptar = document.querySelector("#bEncriptar"); //variable btn enlaza con boton encriptar
+        btnEncriptar.onclick = encriptar; // Si onclick del boton, se realiza la funcion encriptar en el script
+
+        var btnDesencriptar = document.querySelector("#bDesencriptar");
+        btnDesencriptar.onclick = desencriptar; //Llama la funcion desencriptar
+
+        var btnCopiar = document.querySelector("#bCopiar");
+        btnCopiar.onclick = copiar; //Llama la funcion copiar
+    </script>
+
+</html>

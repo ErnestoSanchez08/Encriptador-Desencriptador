@@ -1,0 +1,160 @@
+#bCopiar{
+    display: none;
+}
+
+
+/* Aqui inicia el header */ 
+header{
+    width: 100%;
+    height: 3%;
+    
+}
+header img
+{
+    padding: 5px;
+    margin-left: 95px;
+    
+}
+/*------------------------------------------------------------------- Aqui inicia el main */ 
+main{
+    width: 100%;
+    height: 850px;
+
+    /* Lo que tenga dentro podremos moverlo como cajas */
+    display: flex;
+    justify-content: space-between; /* Se mueven dif los objetos dentro */
+
+    
+}
+
+
+.seccion1{
+    width: 60%;
+    height: 100%;
+    
+}
+
+.textarea{
+    width: 80%;
+    height: 60%;
+    resize: none;
+
+    /* Todo junto para centrarlo-*/ 
+    display: block;            /**/
+    text-align: center;        /* text centra en contenido del centro de donde se ingresa la inf*/
+    margin: auto;              /**/
+    /*---------------------------*/
+
+    margin-top: 20px;
+
+    font-size: 20px;
+    border-radius: 34px;
+    box-shadow: 20px 20px 32px 5px rgba(0, 0, 0, 0.08);
+
+    /*  
+     border-radius:20px;
+     border: 0 ;
+     outline: 0 ;
+    
+    */
+}
+
+.contenedorBotones{
+    text-align: center;
+    margin-top: 35px ;
+    
+}
+
+.botonEncriptar{
+    width: 27.5%;
+    height: 40px;
+    background-color: #0A3871;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-right: 2.5%;
+}
+
+.botonDesencriptar{
+    width: 27.5%;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-left: 2.5%;
+}
+
+.botonCopiar{
+    display: block;
+    width: 30%;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 30px;
+
+    margin: auto; 
+    margin-top: 20px;
+    
+}
+/* --------------------------------------------------------------EMPIEZA SECCION 2 */
+.seccion2{
+    width: 30%;
+    height: 100%;
+    margin-right: 1%;
+    margin-bottom: 20px;
+    border-radius: 34px;
+    box-shadow: 20px 20px 32px 10px rgba(0, 0, 0, 0.7);
+    
+}
+
+.contenedorImagen{
+    width: 100%;
+    height: 60%;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.contenedorSinDatos{
+    width: 100%;
+    height: 20%;
+    font-size: 15px;
+    text-align: center;
+}
+
+#contenedorInicial{
+    display: none;
+}
+
+.contenedorInicial{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+
+/* Aqui inicia el footer */ 
+footer{
+    margin-top: 20px;
+    background-image: url(Imagenes/Ernesto\ Desing-logos_white2.png);
+    background-size: 35%;
+    background: cover;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    background-color: #6c4675;
+}
+
+/* Ultimos estilos */
+
+ 
+
+.botonCopiar:hover{
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+
+.botonEncriptar:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+
+.botonDesencriptar:hover{
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
